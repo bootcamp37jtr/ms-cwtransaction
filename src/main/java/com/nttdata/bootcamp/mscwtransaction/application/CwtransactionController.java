@@ -42,7 +42,7 @@ public class CwtransactionController {
 	}
 	
 	
-	private Cwtransaction sendOperation(Cwtransaction operation) {
+	 Cwtransaction sendOperation(Cwtransaction operation) {
 		log.debug("sendOperation executed {}", operation);
 		if (operation != null) {
 			balanceProducer.sendMessage(operation);
